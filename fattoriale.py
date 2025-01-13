@@ -1,13 +1,13 @@
 numero=5
 fattoriale=1
 
-def fatt_ricc(nume,fatt):
-    fatt *= nume
+def fatt_ricc(nume,fattt):
+    fattt *= nume
     nume-=1
     if(nume>0):
-        return fatt_ricc(nume,fatt)
+        return fatt_ricc(nume,fattt)
     else:
-        return fatt
+        return fattt
 
 fattoriale=fatt_ricc(numero,fattoriale)
 print(fattoriale)
